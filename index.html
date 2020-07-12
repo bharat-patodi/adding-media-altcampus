@@ -9,46 +9,75 @@
 <body>
 
     <header>
-        <nav>
-            <ul class="flex">
-                <li><a href="#">Hydro</a></li>
+        <nav class="flex container">
+            <div class="logo">
+                <a href="#">Hydro</a>
+            </div>
+            <ul class="internal-links flex">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Our Work</a></li>
                 <li><a href="#">Contacts</a></li>
+            </ul>
+            <ul class="social-media flex">
                 <li><a href="#">fb</a></li>
                 <li><a href="#">tw</a></li>
                 <li><a href="#">ig</a></li>
-                <li><a href="#">Sign In/Join</a></li>
             </ul>
+            <div class="sign-up">
+                <a href="#">Sign In/Join</a>
+            </div>
         </nav>
     </header>
     <main>
         <article>
             <section class="hero">
-                <div class="container">
-                    <div class="hero__text">
+                <div class="container flex">
+                    <div class="hero-text">
                         <h1>We make beautiful <br>websites for all people</h1>
-                        <a href="" class="btn">Start a project</a>
-                        <p class="call-us"><span>Call Us (+66) 010-020-0340</span><br>For any inquiry</p>
+                        <div class="hero-cta flex">
+                            <div class="btn btn-hero">
+                                <a href="" class="btn btn-hero">Start a project</a>
+                            </div>
+                            <p class="call-us"><span>Call Us (+66) 010-020-0340</span><br>For any inquiry</p>
+                        </div>
                     </div>
                     <div class="hero-video">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/er1JEDuPbZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315"  src="https://www.youtube.com/embed/er1JEDuPbZQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </section>
             <section class="introduction">
-                <div class="container">
-                    <div class="intro-text">
+                <div class="container flex">
+                    <div class="intro-text flex">
                         <h2>Let us introduce</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum libero error ut impedit et, consequatur cupiditate excepturi illum!<br>Magnam officiis quia aut praesentium labore mollitia ut accusantium libero unde!</p>
-                        <ul>
-                            <li>Web Design 85%</li>
-                            <li>Photography 90%</li>
-                            <li>Content Marketing 75%</li>
-                            <li>CMS Admin 70%</li>
-                        </ul>
+                    </div>
+                    <div class="intro-capabilities flex">
+                        <div class="capability">
+                            <p>Web Design</p>
+                            <p>85%</p>
+                        </div>
+                        <hr class="hr-01">
+
+                        <div class="capability">
+                            <p>Photography</p>
+                            <p>90%</p>
+                        </div>
+                        <hr class="hr-02">
+
+                        <div class="capability">
+                            <p>Content Marketing</p>
+                            <p>75%</p>
+                        </div>
+                        <hr class="hr-03">
+
+                        <div class="capability">
+                            <p>CMS Admin</p>
+                            <p>70%</p>
+                        </div>
+                        <hr class="hr-04">
                     </div>
                     <figure>
                         <img src="assets/images/about-image.jpg" alt="An Image of a man in a hat">
@@ -59,43 +88,40 @@
             <section class="blog">
                 <div class="container">
                     <h2>Our Blog</h2>
-                    <div class="all-cards">
+                    <div class="all-cards flex">
                         <div class="card">
                             <div class="card-img">
-                                <img src="" alt="">
+                                <img src="assets/images/blog-image1.jpg" alt="">
                             </div>
                             <div class="card-text">
-                                <p class="card-date">
-                                    <p>[ico]</p>
-                                    <time datetime="2017-12-22">December 22, 2017</time>
+                                <p class="card-date small">
+                                    <time datetime="2017-12-22"><i class="far fa-clock"></i> December 22, 2017</time>
                                 </p>
                                 <h3>How to find out beautiful workspace</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, facere!</p>
-                                <a href="" class="btn card-btn">Read Article</a>
+                                <a href="#" class="btn card-btn">Read Article</a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-img">
-                                <img src="" alt="">
+                                <img src="assets/images/blog-image2.jpg" alt="">
                             </div>
                             <div class="card-text">
-                                <p class="card-date">
-                                    <p>[ico]</p>
-                                    <time datetime="2017-12-22">December 22, 2017</time>
+                                <p class="card-date small">
+                                    <time datetime="2017-12-22"><i class="far fa-clock"></i> December 22, 2017</time>
                                 </p>
                                 <h3>Woman sportswear</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, facere!</p>
-                                <a href="" class="btn card-btn">Read Article</a>
+                                <a href="#" class="btn card-btn">Read Article</a>
                             </div>
                         </div>
                         <div class="card">
                             <div class="card-img">
-                                <img src="" alt="">
+                                <img src="assets/images/blog-image3.jpg" alt="">
                             </div>
                             <div class="card-text">
-                                <p class="card-date">
-                                    <p>[ico]</p>
-                                    <time datetime="2017-12-22">December 22, 2017</time>
+                                <p class="card-date small">
+                                    <time datetime="2017-12-22"><i class="far fa-clock"></i> December 22, 2017</time>
                                 </p>
                                 <h3>New creative fashion.</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, facere!</p>
@@ -104,12 +130,11 @@
                         </div>
                         <div class="card">
                             <div class="card-img">
-                                <img src="" alt="">
+                                <img src="assets/images/blog-image4.jpg" alt="">
                             </div>
                             <div class="card-text">
-                                <p class="card-date">
-                                    <p>[ico]</p>
-                                    <time datetime="2017-12-22">December 22, 2017</time>
+                                <p class="card-date small">
+                                    <time datetime="2017-12-22"><i class="far fa-clock"></i> December 22, 2017</time>
                                 </p>
                                 <h3>Minimalist design trends in 2020</h3>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, facere!</p>
@@ -122,24 +147,37 @@
             <section class="work">
                 <div class="container">
                     <h2>Our Work</h2>
-                    <img src="assets/images/work-image1.jpg" alt="">
-                    <img src="assets/images/work-image2.jpg" alt="">
-                    <img src="assets/images/work-image3.jpg" alt="">
-                    <img src="assets/images/work-image4.jpg" alt="">
+                    <div class="all-work-images flex">
+                        <figure>
+                            <img src="assets/images/work-image1.jpg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="assets/images/work-image2.jpg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="assets/images/work-image3.jpg" alt="">
+                        </figure>
+                        <figure>
+                            <img src="assets/images/work-image4.jpg" alt="">
+                        </figure>
+                    </div>
                 </div>
             </section>
             <section class="contact">
                 <div class="container">
                     <h2>Contact Us</h2>
-                    <form action="">
-                        <input type="text" value="Full Name" placeholder="Full Name">
-                        <input type="text" value="Your Email" placeholder="Your Email">
-                        <input type="text" value="Your Phone" placeholder="Your Phone">
-                        <input type="text" value="Budget Level" placeholder="Budget Level">
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your requirements"></textarea>
-                        <input type="submit" value="Send Message">
-                    </form>
-                    <p id="map">Google Map location</p>
+                    <div class="contact-details flex">
+
+                        <form action="">
+                            <input type="text" value="Full Name" placeholder="Full Name">
+                            <input type="text" value="Your Email" placeholder="Your Email">
+                            <input type="text" value="Your Phone" placeholder="Your Phone">
+                            <input type="text" value="Budget Level" placeholder="Budget Level">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Your requirements"></textarea>
+                            <input type="submit" value="Send Message" class="btn">
+                        </form>
+                        <p id="map">Google Map location</p>
+                    </div>
                 </div>
             </section>
         </article>

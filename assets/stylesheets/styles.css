@@ -12,26 +12,39 @@ html{box-sizing:border-box}*,*:after,*:before{box-sizing:inherit}
 My Base Styles
 --------------------------------------------------------------- */
 
+:root {
+  --font-giant: 3em;
+  --font-man: 1.4em;
+  --font-teen: 1.2em;
+  --font-boy: 16px;
+  --font-kid: 0.9em;
+  --font-toddler: 0.8em;
+}
+
 body {
-  font-size: 16px;
+  font-size: var(--font-boy);
   line-height: 1.5;
   margin: 0 auto;
 }
 
 h1 {
-  font-size: 1.6em;
+  font-size: var(--font-giant);
 }
 
 h2 {
-  font-size: 1.4em;
+  font-size: var(--font-man);
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: var(--font-teen);
 }
 
 label, input {
   display: block;
+}
+
+.small {
+  font-size: var(--font-toddler);
 }
 
 /* ---------------------------------------------------------------
@@ -48,12 +61,220 @@ Modular Classes
     padding: 0 30px;
 }
 
+.btn {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 5px;
+  border: none;
+  border-radius: 30px;
+  background-color: #eeeeee;
+  max-width: 75%;
+  text-align: center;
+}
 /* ---------------------------------------------------------------
 Header
 --------------------------------------------------------------- */
 
 header nav {
+  justify-content: space-between;
+}
 
+header nav > * {
+  flex: 1;
+}
+
+header nav .logo {
+
+}
+
+header nav .internal-links {
+  flex: 4;
+}
+
+header nav .social-media {
+  flex: 3;
+  justify-content: flex-end;
+  /* text-align: right; */
+}
+
+header nav .sign-up {
+  text-align: right;
+}
+
+/* ---------------------------------------------------------------
+Hero
+--------------------------------------------------------------- */
+
+.hero .container {
+  justify-content: space-between;
+  border: 3px solid orangered;
+  /* justify-content: flex-end; */
+}
+
+.hero-text {
+  border: 3px solid pink;
+  /* flex-basis: 50%; */
+}
+
+.hero-video {
+  border: 3px solid goldenrod;
+  /* display: inline-block; */
+  /* vertical-align: middle; */
+  /* flex-basis: 50%; */
+}
+
+.hero-video iframe {
+  display: block;
+  /* margin: 0 auto; */
+}
+
+h1 {
+  border: 3px solid hotpink;
+  /* display: inline-block; */
+
+}
+.call-us {
+  border: 3px solid maroon;
+  display: inline-block;
+}
+
+.hero-cta {
+  justify-content: space-between;
+  border: 3px solid greenyellow;
+}
+
+/* Put the btn class with other base classes */
+
+
+.btn-hero {
+
+}
+
+/* ---------------------------------------------------------------
+Intro
+--------------------------------------------------------------- */
+
+.intro-text {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introduction figure {
+  /* width: 100%; */
+  /* height: auto; */
+  /* width: 10%; */
+  height: 100%;
+}
+
+.introduction figure img {
+  object-fit: cover;
+  max-width: 350px;
+  display: block;
+}
+
+.intro-capabilities {
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* align-content: center; */
+  background-color: blanchedalmond;
+}
+
+.capability {
+  min-width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.capability p {
+
+}
+
+
+
+.intro-capabilities hr {
+  border: 0;
+  border-bottom: 3px solid black;
+}
+
+.hr-01 {
+  width: 85%;
+  margin-left: 0;
+}
+
+.hr-02 {
+  width: 90%;
+  margin-left: 0;
+}
+
+.hr-03 {
+  width: 75%;
+  margin-left: 0;
+}
+
+.hr-04 {
+  width: 70%;
+  margin-left: 0;
+}
+
+/* ---------------------------------------------------------------
+Blog
+--------------------------------------------------------------- */
+
+.blog {
+  background-color: #eee;
+}
+
+.blog .all-cards {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex-basis: 40%;
+  display: flex;
+  background-color: white;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 4px gray;
+}
+
+.blog .card .card-img {
+  flex-basis: 40%;
+}
+
+.blog .card img {
+  width: 100%;
+  display: block;
+}
+
+.blog .card .card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 60%;
+  padding: 20px;
+}
+
+.blog .card .card-date {
+  color: crimson;
+  font-weight: 700;
+}
+
+/* ---------------------------------------------------------------
+Work
+--------------------------------------------------------------- */
+
+.all-work-images {
+  /* flex-wrap: wrap; */
+}
+
+.work .container figure {
+  /* flex-basis: 30%; */
+}
+
+.work .container img {
+  display: block;
+  width: 80%;
 }
 
 
@@ -61,8 +282,36 @@ header nav {
 Contact
 --------------------------------------------------------------- */
 
-#map {
-  height: 400px;  /* The height is 400 pixels */
-  width: 100%;  /* The width is the width of the web page */
+.contact {
+  background-image: linear-gradient(to right, rgb(52, 52, 219), rgb(47, 209, 47));
+}
 
+.contact-details {
+  flex-wrap: wrap;
+}
+
+.contact-details form {
+  flex-basis: 70%;
+}
+
+#map {
+  height: 250px;  /* The height is 400 pixels */
+  width: 25%;  /* The width is the width of the web page */
+}
+
+.contact-details form .btn {
+  border: none;
+  color: lightgray;
+  background-color: rgb(182, 55, 55);
+}
+
+
+
+/* ---------------------------------------------------------------
+Testing - remove this before final commit
+--------------------------------------------------------------- */
+
+
+*:hover {
+  border: 2px solid black;
 }
